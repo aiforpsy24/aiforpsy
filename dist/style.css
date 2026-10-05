@@ -43,3 +43,15 @@ body{font-size:17px}nav,.start,.language{font-size:15px}.eyebrow{font-size:12px}
 .mobile-question{display:none}
 @media(min-width:761px){.header .mobile-menu,.hero .mobile-wall-caption{display:none!important}}
 @media(max-width:760px){.desktop-question{display:none}.mobile-question{display:inline}.hero-copy{padding-bottom:28px}.mobile-menu:not([open]) .mobile-menu-links{display:none}}
+
+/* A restrained inscription in the mobile wall surface. */
+@media(max-width:760px){
+ .mobile-wall-caption{
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:10px;
+  font-weight:400;
+  letter-spacing:1.05px;
+  color:#7c7466;
+  text-shadow:-.25px -.35px .45px rgba(67,57,43,.16),.35px .55px .55px rgba(255,251,239,.64);
+ }
+}
