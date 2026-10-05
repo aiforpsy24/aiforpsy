@@ -17,3 +17,24 @@ body{font-size:17px}nav,.start,.language{font-size:15px}.eyebrow{font-size:12px}
  .card-body .read-more{margin-top:0}
 }
 @media(min-width:761px){.card-body .lead{white-space:normal}}
+
+/* Mobile navigation and content-led hero spacing. Desktop photo is unchanged. */
+.mobile-menu,.mobile-wall-caption{display:none}
+@media(max-width:760px){
+ .header{position:relative;gap:14px;z-index:3}
+ .mobile-menu{display:block;position:relative;order:2}
+ .language{order:1}
+ .mobile-menu summary{pointer-events:auto;cursor:pointer;flex-direction:row;gap:7px;padding:10px 0 10px 5px}
+ .menu-bars{width:20px;height:14px;border-top:1.5px solid currentColor;border-bottom:1.5px solid currentColor;position:relative}
+ .menu-bars:after{content:'';position:absolute;top:5px;left:0;width:100%;border-top:1.5px solid currentColor}
+ .mobile-menu-links{position:absolute;right:0;top:100%;min-width:185px;padding:12px 18px;background:var(--paper);border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 24px #34362f12;display:grid;gap:12px}
+ .mobile-menu-links .nav-contact{text-align:left}
+ .hero{min-height:0;display:flex;flex-direction:column;background:#f4f1eb}
+ .hero-inner{min-height:0;order:0;width:100%}
+ .hero-copy{padding:24px 0 20px}
+ .hero-photo{position:relative;inset:auto;order:1;display:block;height:auto;aspect-ratio:1.7;object-fit:cover;object-position:center;}
+ .hero:after{inset:auto 0 0;height:calc(100vw / 1.7);background:linear-gradient(180deg,#f4f1eb 0%,#f4f1eb00 24%);z-index:1}
+ .mobile-wall-caption{display:block;position:absolute;bottom:calc(100vw / 1.7 * .58);left:22px;z-index:2;width:38%;margin:0;font-size:10px;line-height:1.6;letter-spacing:1.5px;text-transform:uppercase;color:#646253;font-weight:600}
+ .section-heading .eyebrow{display:none}
+ .services{padding-top:20px}
+}
