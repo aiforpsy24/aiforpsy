@@ -38,3 +38,8 @@ body{font-size:17px}nav,.start,.language{font-size:15px}.eyebrow{font-size:12px}
  .section-heading .eyebrow{display:none}
  .services{padding-top:20px}
 }
+
+/* Explicit responsive visibility, including native details controls. */
+.mobile-question{display:none}
+@media(min-width:761px){.header .mobile-menu,.hero .mobile-wall-caption{display:none!important}}
+@media(max-width:760px){.desktop-question{display:none}.mobile-question{display:inline}.hero-copy{padding-bottom:28px}.mobile-menu:not([open]) .mobile-menu-links{display:none}}
