@@ -55,3 +55,8 @@ body{font-size:17px}nav,.start,.language{font-size:15px}.eyebrow{font-size:12px}
   text-shadow:-.25px -.35px .45px rgba(67,57,43,.16),.35px .55px .55px rgba(255,251,239,.64);
  }
 }
+
+/* Public support contact in all responsive footers. */
+footer{gap:12px}
+footer .footer-email{white-space:nowrap}
+@media(max-width:360px){footer{flex-direction:column;justify-content:center;gap:4px;padding-top:12px!important;padding-bottom:12px!important}}
