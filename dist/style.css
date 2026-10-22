@@ -60,3 +60,6 @@ body{font-size:17px}nav,.start,.language{font-size:15px}.eyebrow{font-size:12px}
 footer{gap:12px}
 footer .footer-email{white-space:nowrap}
 @media(max-width:360px){footer{flex-direction:column;justify-content:center;gap:4px;padding-top:12px!important;padding-bottom:12px!important}}
+
+/* Keep all existing footer items within the mobile viewport. */
+@media(max-width:760px){footer.wrap{flex-wrap:wrap;gap:10px 14px;padding-top:14px;padding-bottom:14px}}

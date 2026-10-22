@@ -5,7 +5,7 @@ responsive();media.addEventListener('change',responsive);
 cards.forEach(card=>card.addEventListener('toggle',()=>{if(media.matches&&!card.open)card.open=true}));
 const dialog=document.querySelector('dialog'),content=document.querySelector('#dialog-content');let selected='AIforPsy';
 function showTemplate(id){content.replaceChildren(document.querySelector(id).content.cloneNode(true));dialog.showModal()}
-document.querySelectorAll('.read-more').forEach(button=>button.addEventListener('click',()=>{selected=button.closest('.card').querySelector('.card-title').textContent;showTemplate('#service-'+button.dataset.service)}));
+document.querySelectorAll('button.read-more').forEach(button=>button.addEventListener('click',()=>{selected=button.closest('.card').querySelector('.card-title').textContent;showTemplate('#service-'+button.dataset.service)}));
 document.querySelectorAll('.nav-contact').forEach(button=>button.addEventListener('click',()=>showTemplate('#contact-content')));
 const mobileMenu=document.querySelector('.mobile-menu');
 mobileMenu.querySelectorAll('a,button').forEach(link=>link.addEventListener('click',()=>mobileMenu.open=false));
@@ -31,3 +31,8 @@ function alignCardIntroductions(){
 requestAnimationFrame(alignCardIntroductions);
 window.addEventListener('resize',alignCardIntroductions);
 if(document.fonts)document.fonts.ready.then(alignCardIntroductions);
+
+
+// This direction opens its catalog; other cards retain their existing interactions.
+const timeCard=cards[1];
+if(timeCard){timeCard.style.cursor="pointer";timeCard.addEventListener("click",event=>{if(media.matches&&!event.target.closest("a")){window.location.href="/"+document.documentElement.lang+"/save-time/"}})}

@@ -1,2 +1,12 @@
 [build]
   publish = "dist"
+
+
+[functions]
+  directory = "netlify/functions"
+
+[[headers]]
+  for = "/*/products/*/hub/*"
+  [headers.values]
+    Cache-Control = "private, no-store"
+    X-Robots-Tag = "noindex, nofollow"

@@ -1,0 +1,213 @@
+{
+  "ui": {
+    "ru": {
+      "home": "Главная",
+      "direction": "Экономить время",
+      "category": "Меньше рутины. Больше возможностей.",
+      "catalogTitle": "Экономьте время с AI",
+      "catalogIntro": "AI-помощники для организационных и повторяющихся дел. Освободите больше времени для клиентов, развития практики и себя.",
+      "watch": "Посмотрите, как это работает",
+      "purchaseNote": "Покупка пока недоступна. Оплата не взимается.",
+      "noteTitle": "Ваш новый рабочий ритм",
+      "noteEnd": "Понятные приоритеты. Посильные шаги.",
+      "changeEyebrow": "От задач — к результатам",
+      "changes": "Что изменится",
+      "watchEyebrow": "Знакомство с вашим помощником",
+      "videoTitle": "От множества дел — к понятному плану",
+      "soon": "Видео скоро появится",
+      "videoDescription": "За несколько минут вы увидите, как AI-директор помогает разобрать реальные дела, определить приоритеты и превратить хаос задач в понятный следующий шаг.",
+      "voices": "Опыт пользователей",
+      "testimonials": "Что говорят пользователи",
+      "reviewsSoon": "Видео с отзывами появится здесь позже.",
+      "reviewButton": "Посмотреть отзывы",
+      "includedEyebrow": "Всё для уверенного старта",
+      "included": "Что вы получите",
+      "finalTitle": "Ваш AI-директор готов взять организационную часть работы на себя.",
+      "checkoutTitle": "Скоро можно будет начать",
+      "checkoutNote": "Мы готовим доступ к продукту. Покупка пока не подключена. Если у вас есть вопросы, напишите нам.",
+      "statusTitle": "Доступ к продукту",
+      "successNote": "Доступ откроется только после подтверждения оплаты. Сейчас приём платежей ещё не подключён.",
+      "cancelNote": "Оплата не завершена. Вы можете вернуться к описанию продукта.",
+      "back": "Вернуться к продукту",
+      "accessTitle": "Материалы для владельцев продукта",
+      "accessNote": "Этот раздел открывается после подтверждённой покупки. Сейчас покупка ещё не доступна."
+    },
+    "en": {
+      "home": "Home",
+      "direction": "Save Time",
+      "category": "Less busywork. More possibilities.",
+      "catalogTitle": "Make time with AI",
+      "catalogIntro": "AI assistants for the organizing and repetitive work behind your practice. Make more room for your clients, your growth, and yourself.",
+      "watch": "See how it works",
+      "purchaseNote": "Purchasing is not available yet. No payment is collected.",
+      "noteTitle": "A calmer way to work",
+      "noteEnd": "Clear priorities. Manageable next steps.",
+      "changeEyebrow": "From tasks to progress",
+      "changes": "What could change",
+      "watchEyebrow": "Meet your new assistant",
+      "videoTitle": "From a full plate to a clear plan",
+      "soon": "Video coming soon",
+      "videoDescription": "In just a few minutes, see how your AI Director helps organize real tasks, set priorities, and turn a tangled to-do list into a clear next step.",
+      "voices": "User experiences",
+      "testimonials": "What users are saying",
+      "reviewsSoon": "A video with user feedback will be added here.",
+      "reviewButton": "Watch user reviews",
+      "includedEyebrow": "Everything you need to get started",
+      "included": "What you get",
+      "finalTitle": "Your AI Director is ready to help organize the work behind your practice.",
+      "checkoutTitle": "Your next step is coming soon",
+      "checkoutNote": "We’re preparing access to this product. Purchasing is not available yet. If you have questions, please email us.",
+      "statusTitle": "Product access",
+      "successNote": "Access requires a verified payment. Payments are not connected yet.",
+      "cancelNote": "Payment was not completed. You can return to the product page.",
+      "back": "Back to the product",
+      "accessTitle": "Resources for product owners",
+      "accessNote": "These materials require a verified purchase. Purchasing is not available yet."
+    }
+  },
+  "products": [
+    {
+      "id": "personal-ai-operations-director-v2",
+      "slug": "personal-ai-operations-director",
+      "status": "published",
+      "price": null,
+      "currency": "USD",
+      "stripePriceId": null,
+      "checkoutAction": "/.netlify/functions/product-access",
+      "explainerYouTubeUrl": null,
+      "testimonialYouTubeUrl": null,
+      "testimonialMode": "link",
+      "productImage": "/hero-workspace-v3.png",
+      "downloads": [
+        {
+          "id": "skill-v2",
+          "filename": "personal_ai_operations_director_skill_v2.zip",
+          "access": "entitlement"
+        }
+      ],
+      "content": {
+        "ru": {
+          "name": "Персональный AI-операционный директор",
+          "hero": "Ваш персональный AI-операционный директор",
+          "category": "AI-помощник для вашей практики",
+          "art": "Меньше держать в голове. Больше доводить до результата.",
+          "tagline": "Ваша правая рука в делах — от первого плана до результата.",
+          "heroIntro": "Организуйте дела, расставляйте приоритеты и двигайте проекты вперёд с персональным AI-помощником. Больше времени для вашей практики и жизни — без найма дополнительного сотрудника.",
+          "results": [
+            "Понятная картина задач и приоритетов",
+            "Меньше повторяющейся ручной работы",
+            "Планы, решения и договорённости в одном месте",
+            "Идеи превращаются в следующие шаги"
+          ],
+          "more": "Подробнее",
+          "buy": "Получить AI-директора",
+          "quote": "«Ну что, как у нас дела? Что уже готово и какой следующий шаг?»",
+          "benefits": [
+            [
+              "Больше свободного времени",
+              "Меньше времени на списки и планирование. Больше — для себя и близких."
+            ],
+            [
+              "Меньше ручной работы",
+              "Помощь с материалами, повторяющимися задачами и доступными подключёнными инструментами."
+            ],
+            [
+              "Ничего важного не теряется",
+              "Договорённости, идеи и сроки становятся частью понятной системы."
+            ],
+            [
+              "Проекты двигаются вперёд",
+              "Разбивайте большую задачу на посильные шаги и следите за результатом."
+            ],
+            [
+              "Легче принимать решения",
+              "Обсуждайте приоритеты и выбирайте, чему уделить внимание сейчас."
+            ],
+            [
+              "Больше реализованных идей",
+              "Планируйте курс, группу или цифровой продукт — и двигайтесь к запуску."
+            ]
+          ],
+          "includes": [
+            "Готовый AI-скилл",
+            "Пошаговые инструкции запуска",
+            "Готовые стартовые сообщения",
+            "Два полноценных способа начать",
+            "Инструкции по Google Drive",
+            "Примеры ежедневной работы",
+            "Помощь, если что-то не работает"
+          ]
+        },
+        "en": {
+          "name": "Personal AI Operations Director",
+          "hero": "Your Personal AI Operations Director",
+          "category": "An AI assistant for your practice",
+          "art": "Keep less in your head. Bring more plans to life.",
+          "tagline": "Your right hand for moving from plans to real progress.",
+          "heroIntro": "Organize your workload, see your priorities, and move projects forward with a personal AI assistant. Make more time for your practice and your life, without hiring another employee.",
+          "results": [
+            "A clear view of tasks and priorities",
+            "Less repetitive manual work",
+            "Plans, decisions, and commitments organized",
+            "Ideas turned into actionable next steps"
+          ],
+          "more": "Learn More",
+          "buy": "Get Your AI Director",
+          "quote": "“So, how are we doing? What’s finished, and what’s the next step?”",
+          "benefits": [
+            [
+              "More free time",
+              "Spend less time organizing lists and more time on yourself and the people you love."
+            ],
+            [
+              "Less manual work",
+              "Get help with materials, repetitive tasks, and tools you choose to connect."
+            ],
+            [
+              "Fewer things slipping through the cracks",
+              "Bring commitments, ideas, and deadlines into one clear system."
+            ],
+            [
+              "Projects moving forward",
+              "Break a big task into manageable steps and keep track of progress."
+            ],
+            [
+              "More confident decisions",
+              "Talk through priorities and choose what deserves your attention now."
+            ],
+            [
+              "More ideas brought to life",
+              "Plan your course, group program, or digital product and move toward launch."
+            ]
+          ],
+          "includes": [
+            "A ready-to-use AI skill",
+            "Step-by-step setup instructions",
+            "Ready-to-copy starter prompts",
+            "Two complete ways to get started",
+            "Google Drive instructions",
+            "Everyday conversation examples",
+            "Troubleshooting guidance"
+          ]
+        }
+      },
+      "access": {
+        "mode": "server-verified",
+        "entitlementRequired": true,
+        "hub": "hub/",
+        "quickStart": "hub/quick-start/",
+        "fullAutomation": "hub/full-automation/",
+        "success": "success/",
+        "cancel": "cancel/"
+      },
+      "quickStartYouTubeUrl": null,
+      "fullAutomationYouTubeUrl": null
+    },
+    {
+      "id": "ai-secretary",
+      "slug": "ai-secretary",
+      "status": "draft",
+      "content": {}
+    }
+  ]
+}
