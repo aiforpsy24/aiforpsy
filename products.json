@@ -4,8 +4,8 @@
       "home": "Главная",
       "direction": "Экономить время",
       "category": "Меньше рутины. Больше возможностей.",
-      "catalogTitle": "Экономьте время с AI",
-      "catalogIntro": "AI-помощники для организационных и повторяющихся дел. Освободите больше времени для клиентов, развития практики и себя.",
+      "catalogTitle": "Экономьте время с AI-помощниками",
+      "catalogIntro": "Помощники на базе искусственного интеллекта возьмут на себя часть организационной работы: помогут с перепиской, планированием, материалами и задачами. Больше времени — для клиентов, развития практики и себя.",
       "watch": "Посмотрите, как это работает",
       "purchaseNote": "Покупка пока недоступна. Оплата не взимается.",
       "noteTitle": "Ваш новый рабочий ритм",
@@ -36,8 +36,8 @@
       "home": "Home",
       "direction": "Save Time",
       "category": "Less busywork. More possibilities.",
-      "catalogTitle": "Make time with AI",
-      "catalogIntro": "AI assistants for the organizing and repetitive work behind your practice. Make more room for your clients, your growth, and yourself.",
+      "catalogTitle": "Save time with AI assistants",
+      "catalogIntro": "AI assistants help with the organizing work behind your practice: correspondence, planning, materials, and everyday tasks. Make more time for clients, growing your practice, and yourself.",
       "watch": "See how it works",
       "purchaseNote": "Purchasing is not available yet. No payment is collected.",
       "noteTitle": "A calmer way to work",
@@ -77,7 +77,7 @@
       "explainerYouTubeUrl": null,
       "testimonialYouTubeUrl": null,
       "testimonialMode": "link",
-      "productImage": "/hero-workspace-v3.png",
+      "productImage": "/ai-director-planning-v1.webp",
       "downloads": [
         {
           "id": "skill-v2",
@@ -91,7 +91,7 @@
           "hero": "Ваш персональный AI-операционный директор",
           "category": "AI-помощник для вашей практики",
           "art": "Меньше держать в голове. Больше доводить до результата.",
-          "tagline": "Ваша правая рука в делах — от первого плана до результата.",
+          "tagline": "Клиенты, консультации, обучение, продвижение и десятки идей — AI-директор помогает собрать дела в понятную систему, определить приоритеты и двигаться к результату.",
           "heroIntro": "Организуйте дела, расставляйте приоритеты и двигайте проекты вперёд с персональным AI-помощником. Больше времени для вашей практики и жизни — без найма дополнительного сотрудника.",
           "results": [
             "Понятная картина задач и приоритетов",
@@ -136,14 +136,15 @@
             "Инструкции по Google Drive",
             "Примеры ежедневной работы",
             "Помощь, если что-то не работает"
-          ]
+          ],
+          "imageAlt": "Ноутбук и план дел на светлом рабочем столе"
         },
         "en": {
           "name": "Personal AI Operations Director",
           "hero": "Your Personal AI Operations Director",
           "category": "An AI assistant for your practice",
           "art": "Keep less in your head. Bring more plans to life.",
-          "tagline": "Your right hand for moving from plans to real progress.",
+          "tagline": "Clients, sessions, continuing education, marketing, and a dozen new ideas — your AI Director helps organize it all, set priorities, and move plans forward.",
           "heroIntro": "Organize your workload, see your priorities, and move projects forward with a personal AI assistant. Make more time for your practice and your life, without hiring another employee.",
           "results": [
             "A clear view of tasks and priorities",
@@ -188,7 +189,8 @@
             "Google Drive instructions",
             "Everyday conversation examples",
             "Troubleshooting guidance"
-          ]
+          ],
+          "imageAlt": "A laptop and a planner on a light desk"
         }
       },
       "access": {

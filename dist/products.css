@@ -6,3 +6,57 @@
 .product-page dialog .video-poster{align-items:center}
 .product-page dialog .play-outline{width:42px;height:42px;font-size:24px;margin:0}
 .product-page dialog .video-poster p{font-size:12px;margin:9px 0 0}
+/* Compact catalog and sales-page rhythm; setup and homepage retain their layout. */
+.catalog-heading{max-width:850px;margin:5px 0 25px}
+.catalog-heading h1{font-size:40px;letter-spacing:-1px}
+.product-page .catalog-heading .product-intro{font-size:16px;max-width:850px;margin:15px 0 0}
+.product-card{grid-template-columns:200px minmax(0,1fr);gap:24px;padding:17px;border-radius:15px;align-items:stretch}
+.product-art{padding:0;min-height:0;border-radius:10px;overflow:hidden}
+.product-art img{display:block;width:100%;height:100%;min-height:240px;object-fit:cover}
+.product-card-copy{padding:3px 10px 3px 0}
+.product-card-copy .eyebrow{margin:0 0 7px;font-size:10px}
+.product-card-copy h2{font-size:27px;max-width:none;line-height:1.16}
+.product-page .product-card-copy .product-intro{font-size:15px;margin:11px 0 12px;max-width:none;line-height:1.55}
+.product-card-copy .outcomes{display:grid;grid-template-columns:1fr 1fr;gap:5px 20px;margin:10px 0 17px;font-size:14px}
+.product-card-copy .outcomes li{padding-top:2px;padding-bottom:2px;line-height:1.4}
+.product-card-copy .product-button{padding:9px 20px;min-height:42px;font-size:14px}
+.product-hero{gap:40px;padding:0 0 12px}
+.product-hero h1{font-size:45px;letter-spacing:-1px}
+.product-page .product-hero .product-intro{font-size:17px;margin:18px 0 21px}
+.product-hero .editorial-note{min-height:280px;padding:30px 25px;border-radius:85px 85px 14px 14px}
+.product-hero .editorial-note blockquote{font-size:25px;margin:12px 0 20px}
+.product-section{padding:24px 0}
+.product-section>h2{margin-bottom:20px}
+.benefit{padding:21px}
+.benefit h3{font-size:23px}
+.benefit p{font-size:15px}
+.testimonial-band{margin:18px 0;padding:27px}
+.final-cta{margin-top:24px;padding:32px 26px}
+@media(max-width:760px){
+ .product-page .product-wrap{padding-top:24px;padding-bottom:28px}
+ .catalog-heading{margin:0 0 20px}
+ .catalog-heading h1{font-size:32px;line-height:1.12}
+ .product-page .catalog-heading .product-intro{font-size:15px;line-height:1.55;margin-top:13px}
+ .product-card{grid-template-columns:1fr;gap:16px;padding:15px}
+ .product-art{height:155px}
+ .product-art img{min-height:0;height:155px;object-position:center 55%}
+ .product-card-copy{padding:0 1px 3px}
+ .product-card-copy h2{font-size:25px;overflow-wrap:anywhere}
+ .product-card-copy .outcomes{grid-template-columns:1fr;gap:5px;margin-bottom:15px}
+ .product-page .product-card-copy .product-intro{font-size:15px;margin:10px 0}
+ .product-card-copy .product-button{min-height:45px}
+ .product-hero{gap:0;padding-bottom:6px}
+ .product-hero h1{font-size:34px;line-height:1.1}
+ .product-page .product-hero .product-intro{font-size:16px;margin:15px 0 18px}
+ .product-hero .editorial-note{min-height:0;border-radius:13px;padding:22px;margin-top:20px}
+ .product-hero .editorial-note blockquote{font-size:23px;margin:10px 0 14px}
+ .product-section{padding:18px 0}
+ .benefit{padding:20px}
+ .benefit h3{font-size:23px}
+ .testimonial-band{padding:23px;margin:12px 0}
+ .final-cta{padding:26px 22px;margin-top:20px}
+}
+.product-breadcrumb{margin-bottom:25px}
+.product-hero{padding-bottom:4px}
+.product-hero .quiet{margin:10px 0 0}
+.product-hero+.product-section{padding-top:14px}
