@@ -74,7 +74,8 @@ def build_private(out,lang,config,p,crumbs):
  cards=''
  for path,title,subtitle,body,cta in private['paths']:
   cards+=f'<article class="path-card"><p class="eyebrow">{subtitle}</p><h2>{title}</h2><p>{body}</p>{link("/"+base+"/hub/"+path+"/",cta)}</article>'
- body=f'<div class="wrap product-wrap">{crumbs}<div class="hub-heading"><p class="eyebrow">{private["welcome"]}</p><h1>{private["title"]}</h1><p class="product-intro">{private["intro"]}</p></div><div class="path-grid">{cards}</div><p class="quiet">{private["fallback"]}</p></div>'
+ body=f'<div class="wrap product-wrap">{crumbs}<div class="hub-heading"><p class="eyebrow">{private["welcome"]}</p><h1>{private["title"]}</h1><p class="product-intro">{private["intro"]}</p><button class="product-button secondary" data-hub-video>{private["watchMore"]} <span aria-hidden="true">▷</span></button></div><div class="path-grid">{cards}</div><p class="quiet">{private["fallback"]}</p></div>'
+ body+=f'<template id="hub-video"><h2>{private["watchMore"]}</h2>{video(c,p.get("hubYouTubeUrl"))}</template>'
  write(out,base+'/hub',shell(lang,private['title'],body,f'products/{SLUG}/hub/',True))
  for path,title,subtitle,desc,cta in private['paths']:
   content=f'<div class="wrap product-wrap tutorial-wrap"><a class="back-link" href="/{base}/hub/">← {private["back"]}</a><p class="eyebrow">{subtitle}</p><h1>{title}</h1>{video(c,p.get("quickStartYouTubeUrl") if path=="quick-start" else p.get("fullAutomationYouTubeUrl"))}<div class="download-panel">{link("/downloads/"+p["downloads"][0]["filename"],private["download"])}<span>{private["zipNote"]}</span></div><p class="product-intro">{private["quickIntro"] if path=="quick-start" else private["fullIntro"]}</p><div class="step-list">'

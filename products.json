@@ -201,7 +201,8 @@
         "cancel": "cancel/"
       },
       "quickStartYouTubeUrl": null,
-      "fullAutomationYouTubeUrl": null
+      "fullAutomationYouTubeUrl": null,
+      "hubYouTubeUrl": null
     },
     {
       "id": "ai-secretary",

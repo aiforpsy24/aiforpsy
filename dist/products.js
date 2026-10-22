@@ -11,3 +11,7 @@ menu.querySelectorAll('a,button').forEach(el=>el.addEventListener('click',()=>me
 document.addEventListener('click',e=>{if(!menu.contains(e.target))menu.open=false});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')menu.open=false});
 document.querySelectorAll('.copy-prompt').forEach(b=>b.addEventListener('click',async()=>{const block=b.closest('.prompt-block');try{await navigator.clipboard.writeText(block.querySelector('pre').textContent);block.querySelector('.copy-status').textContent=lang==='ru'?'Скопировано':'Copied'}catch{block.querySelector('.copy-status').textContent=lang==='ru'?'Выделите и скопируйте текст сообщения ниже.':'Select and copy the message below.';const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(block.querySelector('pre'));selection.removeAllRanges();selection.addRange(range)}}));
+
+// The hub introduction opens its own explainer, configured separately from setup videos.
+document.querySelectorAll("[data-hub-video]").forEach(b=>b.addEventListener("click",()=>show("#hub-video")));
+dialog.addEventListener("close",()=>content.replaceChildren());
