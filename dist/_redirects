@@ -1,0 +1,7 @@
+# Retired product delivery URLs return to the same-language sales page.
+/:lang/products/personal-ai-operations-director/hub /:lang/products/personal-ai-operations-director/ 301!
+/:lang/products/personal-ai-operations-director/hub/* /:lang/products/personal-ai-operations-director/ 301!
+/:lang/products/personal-ai-operations-director/success /:lang/products/personal-ai-operations-director/ 301!
+/:lang/products/personal-ai-operations-director/success/* /:lang/products/personal-ai-operations-director/ 301!
+/:lang/products/personal-ai-operations-director/cancel /:lang/products/personal-ai-operations-director/ 301!
+/:lang/products/personal-ai-operations-director/cancel/* /:lang/products/personal-ai-operations-director/ 301!
