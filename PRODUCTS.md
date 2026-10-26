@@ -1,30 +1,26 @@
-# AIforPsy products extension
+# AIforPsy product storefront
 
-Extends the existing production repository, static bilingual generator and Netlify deployment. Requires Python 3.12+ for local generation. No new framework or account required.
+The existing AIforPsy repository is a static bilingual sales storefront deployed on Netlify. Payments, customer access, lessons, and materials belong to TA-Next Academy.
 
 ## Build
 
-`python3 build.py` regenerates the homepage and all public product routes. Existing privacy pages and assets remain in dist. Netlify publishes committed dist; no build dependency was introduced.
+Use Python 3.12+ and run `python3 build.py`. Netlify publishes committed `dist/`; no build dependency, API, or account system is required. Existing homepage, privacy pages, shared styles, header, and footer are preserved.
 
-`products.json` is the catalog and product data layer. `render_card` is the shared card renderer. Only `status: published` items appear. AI Secretary remains draft. Video URLs are null until supplied; only validated YouTube embed IDs are accepted. `testimonialMode` accepts link or embed.
+`products.json` is the catalog and sales-content configuration. Only `status: published` items appear in the catalog. AI Secretary remains draft.
 
-## Routes (both /ru and /en)
+## Public routes (both /ru and /en)
 
-- /save-time/: catalog
-- /products/personal-ai-operations-director/: sales page
-- /products/personal-ai-operations-director/hub/: access boundary in production
-- /products/personal-ai-operations-director/hub/quick-start/: protected setup path
-- /products/personal-ai-operations-director/hub/full-automation/: protected setup path
-- /products/personal-ai-operations-director/success/ and /cancel/: status routes, never unlock access
+- `/save-time/`: existing product catalog.
+- `/products/personal-ai-operations-director/`: existing sales page, including hero, description, benefits, explainer video, testimonials, and purchase CTAs.
 
-## Paid materials and local review
+The previous hub, setup paths, payment status pages, private preview generator, download handlers, and access function have been removed. Netlify redirects retired product URLs to the same-language sales page; they do not grant access or start a purchase. There are no paid files in the public deployment.
 
-No paid instructions, prompts or ZIP assets are included in the public dist or repository. The complete private preview lives in the owner's local product-work directory. To regenerate locally place private-content.json and personal_ai_operations_director_skill_v2.zip in the parent of this checkout and run `python3 build_products.py --preview`. Serve preview-dist on loopback only. Never publish preview-dist. No localStorage, URL query or client flag grants production access.
+## External purchase destination
 
-Current production access pages explain access requirements. The server function product-access returns 403 for access and 503 for checkout; no active checkout or verified-user path exists yet. These are explicit integration boundaries, not a completed payment/access system.
+Set **one** `externalPurchaseUrl` on `products[0]` to the exact, verified HTTPS mirror-product URL on `ta-next.com` (or `www.ta-next.com`). The configured destination is the exact mirror-product URL supplied by the owner, including its `share_version` parameter. Both purchase CTAs render as ordinary links to TA-Next Academy; only the existing `lang` query parameter follows the current page language. If the URL is cleared to `null`, CTAs stay visible but disabled and the existing not-yet-available notice is shown. No production path is guessed.
 
-## Next integration phase
+After setting the URL, rebuild and verify both language pages, both CTAs, and the destination. No payment keys, checkout session, webhook, entitlement, database, or AIforPsy success/cancel flow should be introduced. Purchase and delivery remain entirely on TA-Next Academy.
 
-Set approved price and Stripe price ID. Implement checkout server-side. Verify webhook signatures and deduplicate events; grant per-product entitlement only after verified payment. Verify a signed customer session on every hub and download request, then serve content from private storage with non-cacheable responses. Never serve paid content from public dist. A success URL alone must not grant access. Keep Resend/domain secrets out of source.
+## Public videos and content
 
-Set explainerYouTubeUrl, quickStartYouTubeUrl, fullAutomationYouTubeUrl and testimonialYouTubeUrl when ready. UI layout remains the same.
+`explainerYouTubeUrl` and `testimonialYouTubeUrl` retain their existing behavior and placeholders. `testimonialMode` accepts `link` or `embed`. Approved RU/EN sales copy and product-includes data remain unchanged. No translation or extra section has been introduced.

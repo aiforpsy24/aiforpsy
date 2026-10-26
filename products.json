@@ -22,15 +22,7 @@
       "reviewButton": "Посмотреть отзывы",
       "includedEyebrow": "Всё для уверенного старта",
       "included": "Что вы получите",
-      "finalTitle": "Ваш AI-директор готов взять организационную часть работы на себя.",
-      "checkoutTitle": "Скоро можно будет начать",
-      "checkoutNote": "Мы готовим доступ к продукту. Покупка пока не подключена. Если у вас есть вопросы, напишите нам.",
-      "statusTitle": "Доступ к продукту",
-      "successNote": "Доступ откроется только после подтверждения оплаты. Сейчас приём платежей ещё не подключён.",
-      "cancelNote": "Оплата не завершена. Вы можете вернуться к описанию продукта.",
-      "back": "Вернуться к продукту",
-      "accessTitle": "Материалы для владельцев продукта",
-      "accessNote": "Этот раздел открывается после подтверждённой покупки. Сейчас покупка ещё не доступна."
+      "finalTitle": "Ваш AI-директор готов взять организационную часть работы на себя."
     },
     "en": {
       "home": "Home",
@@ -54,15 +46,7 @@
       "reviewButton": "Watch user reviews",
       "includedEyebrow": "Everything you need to get started",
       "included": "What you get",
-      "finalTitle": "Your AI Director is ready to help organize the work behind your practice.",
-      "checkoutTitle": "Your next step is coming soon",
-      "checkoutNote": "We’re preparing access to this product. Purchasing is not available yet. If you have questions, please email us.",
-      "statusTitle": "Product access",
-      "successNote": "Access requires a verified payment. Payments are not connected yet.",
-      "cancelNote": "Payment was not completed. You can return to the product page.",
-      "back": "Back to the product",
-      "accessTitle": "Resources for product owners",
-      "accessNote": "These materials require a verified purchase. Purchasing is not available yet."
+      "finalTitle": "Your AI Director is ready to help organize the work behind your practice."
     }
   },
   "products": [
@@ -70,21 +54,10 @@
       "id": "personal-ai-operations-director-v2",
       "slug": "personal-ai-operations-director",
       "status": "published",
-      "price": null,
-      "currency": "USD",
-      "stripePriceId": null,
-      "checkoutAction": "/.netlify/functions/product-access",
       "explainerYouTubeUrl": null,
       "testimonialYouTubeUrl": null,
       "testimonialMode": "link",
       "productImage": "/ai-director-planning-v1.webp",
-      "downloads": [
-        {
-          "id": "skill-v2",
-          "filename": "personal_ai_operations_director_skill_v2.zip",
-          "access": "entitlement"
-        }
-      ],
       "content": {
         "ru": {
           "name": "Персональный AI-операционный директор",
@@ -193,18 +166,7 @@
           "imageAlt": "A laptop and a planner on a light desk"
         }
       },
-      "access": {
-        "mode": "server-verified",
-        "entitlementRequired": true,
-        "hub": "hub/",
-        "quickStart": "hub/quick-start/",
-        "fullAutomation": "hub/full-automation/",
-        "success": "success/",
-        "cancel": "cancel/"
-      },
-      "quickStartYouTubeUrl": null,
-      "fullAutomationYouTubeUrl": null,
-      "hubYouTubeUrl": null
+      "externalPurchaseUrl": "https://ta-next.com/explore/resources/personal-ai-operations-director?lang=ru&share_version=1792808503"
     },
     {
       "id": "ai-secretary",

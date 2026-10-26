@@ -2,11 +2,39 @@
   publish = "dist"
 
 
-[functions]
-  directory = "netlify/functions"
+# Retired product delivery URLs return visitors to the existing sales page.
+[[redirects]]
+  from = "/:lang/products/personal-ai-operations-director/hub"
+  to = "/:lang/products/personal-ai-operations-director/"
+  status = 301
+  force = true
 
-[[headers]]
-  for = "/*/products/*/hub/*"
-  [headers.values]
-    Cache-Control = "private, no-store"
-    X-Robots-Tag = "noindex, nofollow"
+[[redirects]]
+  from = "/:lang/products/personal-ai-operations-director/hub/*"
+  to = "/:lang/products/personal-ai-operations-director/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/:lang/products/personal-ai-operations-director/success"
+  to = "/:lang/products/personal-ai-operations-director/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/:lang/products/personal-ai-operations-director/success/*"
+  to = "/:lang/products/personal-ai-operations-director/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/:lang/products/personal-ai-operations-director/cancel"
+  to = "/:lang/products/personal-ai-operations-director/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/:lang/products/personal-ai-operations-director/cancel/*"
+  to = "/:lang/products/personal-ai-operations-director/"
+  status = 301
+  force = true
