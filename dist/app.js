@@ -11,7 +11,7 @@ const mobileMenu=document.querySelector('.mobile-menu');
 mobileMenu.querySelectorAll('a,button').forEach(link=>link.addEventListener('click',()=>mobileMenu.open=false));
 document.addEventListener('keydown',event=>{if(event.key==='Escape')mobileMenu.open=false});
 document.addEventListener('click',event=>{if(!mobileMenu.contains(event.target))mobileMenu.open=false});
-content.addEventListener('click',async event=>{if(event.target.closest('.contact-button'))content.replaceChildren(document.querySelector('#contact-content').content.cloneNode(true));if(event.target.closest('.copy-selection')){try{await navigator.clipboard.writeText(selected);event.target.textContent=document.documentElement.lang==='ru'?'Скопировано':'Copied'}catch{event.target.textContent=selected}}});
+content.addEventListener('click',async event=>{if(event.target.closest('.contact-button'))content.replaceChildren(document.querySelector('#contact-content').content.cloneNode(true));if(event.target.closest('.copy-selection')){try{await navigator.clipboard.writeText(selected);event.target.textContent=event.target.closest('.copy-selection').dataset.copied}catch{event.target.textContent=selected}}});
 document.querySelector('.close').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close()}});
 // Keep introductions top aligned using the tallest actual text, without an oversized fixed spacer.

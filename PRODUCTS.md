@@ -1,6 +1,6 @@
 # AIforPsy product storefront
 
-The existing AIforPsy repository is a static bilingual sales storefront deployed on Netlify. Payments, customer access, lessons, and materials belong to TA-Next Academy.
+The existing AIforPsy repository is a static multilingual sales storefront deployed on Netlify. Payments, customer access, lessons, and materials belong to TA-Next Academy.
 
 ## Build
 
@@ -8,7 +8,7 @@ Use Python 3.12+ and run `python3 build.py`. Netlify publishes committed `dist/`
 
 `products.json` is the catalog and sales-content configuration. Only `status: published` items appear in the catalog. AI Secretary remains draft.
 
-## Public routes (both /ru and /en)
+## Public routes (/uk, /en, /ru)
 
 - `/save-time/`: existing product catalog.
 - `/products/personal-ai-operations-director/`: existing sales page, including hero, description, benefits, explainer video, testimonials, and purchase CTAs.
@@ -17,10 +17,10 @@ The previous hub, setup paths, payment status pages, private preview generator, 
 
 ## External purchase destination
 
-Set **one** `externalPurchaseUrl` on `products[0]` to the exact, verified HTTPS mirror-product URL on `ta-next.com` (or `www.ta-next.com`). The configured destination is the exact mirror-product URL supplied by the owner, including its `share_version` parameter. Both purchase CTAs render as ordinary links to TA-Next Academy; only the existing `lang` query parameter follows the current page language. If the URL is cleared to `null`, CTAs stay visible but disabled and the existing not-yet-available notice is shown. No production path is guessed.
+Set **one** `externalPurchaseUrl` on `products[0]` to the exact, verified HTTPS mirror-product URL on `ta-next.com` (or `www.ta-next.com`). The configured destination is the exact mirror-product URL supplied by the owner, including its `share_version` parameter. Both purchase CTAs render as ordinary links to TA-Next Academy; the existing `lang` query follows the configured destination language. Ukrainian product content on TA-Next currently returns an unavailable page. At the owner’s explicit request, `externalPurchaseLanguages.uk` is `null`: both Ukrainian purchase CTAs are disabled, with a Ukrainian explanation from `externalPurchaseNotices.uk`. Set that override to `uk` (or remove it) and clear the notice only once the TA-Next Ukrainian product page is verified. English and Russian retain their matching destinations. If the URL is cleared to `null`, CTAs stay visible but disabled and the existing not-yet-available notice is shown. No production path is guessed.
 
-After setting the URL, rebuild and verify both language pages, both CTAs, and the destination. No payment keys, checkout session, webhook, entitlement, database, or AIforPsy success/cancel flow should be introduced. Purchase and delivery remain entirely on TA-Next Academy.
+After setting the URL, rebuild and verify all language pages, both CTAs, and the destination. No payment keys, checkout session, webhook, entitlement, database, or AIforPsy success/cancel flow should be introduced. Purchase and delivery remain entirely on TA-Next Academy.
 
 ## Public videos and content
 
-`explainerYouTubeUrl` and `testimonialYouTubeUrl` retain their existing behavior and placeholders. `testimonialMode` accepts `link` or `embed`. Approved RU/EN sales copy and product-includes data remain unchanged. No translation or extra section has been introduced.
+`explainerYouTubeUrl` and `testimonialYouTubeUrl` retain their existing behavior and placeholders. `testimonialMode` accepts `link` or `embed`. Approved existing RU/EN sales copy and its Ukrainian translation and product-includes data remain unchanged. No translation or extra section has been introduced.

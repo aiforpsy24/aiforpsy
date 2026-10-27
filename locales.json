@@ -1,0 +1,103 @@
+{
+  "default": "uk",
+  "languages": [
+    {
+      "code": "uk",
+      "label": "Українська",
+      "short": "UA"
+    },
+    {
+      "code": "en",
+      "label": "English",
+      "short": "EN"
+    },
+    {
+      "code": "ru",
+      "label": "Русский",
+      "short": "RU"
+    }
+  ],
+  "ui": {
+    "uk": {
+      "home": "Головна",
+      "about": "Про нас",
+      "services": "Послуги",
+      "contact": "Контакти",
+      "navigation": "Навігація",
+      "menuOpen": "Відкрити меню",
+      "languageMenu": "Обрати мову",
+      "headline": "Психологія. Коучинг.<br>Консультування.",
+      "accent": "Тепер — разом зі штучним інтелектом.",
+      "find": "Знайти своє рішення",
+      "strap": "Ваш досвід. Нові можливості.",
+      "heroAlt": "Світлий робочий стіл із ноутбуком і чашкою із зеленим глобусом",
+      "experience": "20+ років досвіду",
+      "question": "Чим штучний інтелект може допомогти саме вам?",
+      "mobileQuestion": "Чим штучний інтелект може допомогти саме вам?",
+      "readMore": "Читати більше",
+      "privacy": "Конфіденційність",
+      "details": "Докладніше про послугу",
+      "close": "Закрити",
+      "contactTitle": "Обговорити мій проєкт",
+      "contactText": "Із питань сайту та плагіна Event Marketing Assistant напишіть у підтримку:",
+      "copySelection": "Скопіювати напрям",
+      "copied": "Скопійовано",
+      "introPrefix": "Ми ",
+      "doneForYou": "Ми можемо зробити все за вас і для вас — від ідеї до результату. Вам залишиться лише користуватися готовим рішенням."
+    },
+    "en": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "contact": "Contact",
+      "navigation": "Navigation",
+      "menuOpen": "Open menu",
+      "languageMenu": "Choose language",
+      "headline": "Psychology. Coaching.<br>Consulting.",
+      "accent": "Now — powered by AI.",
+      "find": "Find Your Solution",
+      "strap": "Your experience. New possibilities.",
+      "heroAlt": "Sunlit desk with a laptop and a green globe mug",
+      "experience": "20+ years of experience",
+      "question": "How Can AI Help You?",
+      "mobileQuestion": "What Do You Need AI to Help You With?",
+      "readMore": "Read More",
+      "privacy": "Privacy",
+      "details": "Service details",
+      "close": "Close",
+      "contactTitle": "Discuss My Project",
+      "contactText": "For website and Event Marketing Assistant support, email:",
+      "copySelection": "Copy Selected Service",
+      "copied": "Copied",
+      "introPrefix": "We ",
+      "doneForYou": "We can do everything for you — from idea to finished result. All you have to do is use the solution we create for you."
+    },
+    "ru": {
+      "home": "Главная",
+      "about": "О нас",
+      "services": "Услуги",
+      "contact": "Контакты",
+      "navigation": "Навигация",
+      "menuOpen": "Открыть меню",
+      "languageMenu": "Выбрать язык",
+      "headline": "Психология. Коучинг.<br>Консультирование.",
+      "accent": "Теперь — вместе с искусственным интеллектом.",
+      "find": "Найти своё решение",
+      "strap": "Ваш опыт. Новые возможности.",
+      "heroAlt": "Светлый рабочий стол с ноутбуком и чашкой с зелёным глобусом",
+      "experience": "20+ лет опыта",
+      "question": "Чем искусственный интеллект может помочь именно вам?",
+      "mobileQuestion": "Чем искусственный интеллект может помочь именно вам?",
+      "readMore": "Читать больше",
+      "privacy": "Конфиденциальность",
+      "details": "Подробнее об услуге",
+      "close": "Закрыть",
+      "contactTitle": "Обсудить мой проект",
+      "contactText": "По вопросам сайта и плагина Event Marketing Assistant напишите в поддержку:",
+      "copySelection": "Скопировать направление",
+      "copied": "Скопировано",
+      "introPrefix": "Мы ",
+      "doneForYou": "Мы можем сделать всё за вас и для вас — от идеи до результата. Вам останется только использовать готовое решение."
+    }
+  }
+}

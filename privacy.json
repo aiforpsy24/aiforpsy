@@ -1,0 +1,143 @@
+{
+  "uk": {
+    "title": "Політика конфіденційності",
+    "byline": "Event Marketing Assistant · Viktoriia Kotova",
+    "sections": [
+      {
+        "title": "Сфера дії та контакти",
+        "body": "<p>Ця політика стосується Event Marketing Assistant, видавець — Viktoriia Kotova, та підтримки через AIforPsy. Із питань даних і підтримки звертайтеся на <a href=\"mailto:support@aiforpsy.net\">support@aiforpsy.net</a>. Оновлено: 7 жовтня 2026 року.</p>"
+      },
+      {
+        "title": "Використання плагіна в ChatGPT",
+        "body": "<p>Поточна версія містить інструкції та локальні допоміжні скрипти. Вона не має API видавця, зовнішнього MCP-сервера, власної системи облікових записів, телеметрії чатів або автоматичного передавання листування й завантажених файлів видавцеві. Відомості про захід і файли обробляються у вашому середовищі ChatGPT за правилами OpenAI та налаштуваннями вашого облікового запису. OpenAI самостійно визначає порядок обробки, зберігання та видалення своїх даних. Ця політика не замінює політику конфіденційності OpenAI.</p>"
+      },
+      {
+        "title": "Які відомості ми отримуємо",
+        "body": "<p>Якщо ви пишете до служби підтримки, ми отримуємо вашу електронну адресу, зазначене ім’я, текст звернення, добровільно надіслані вкладення та звичайні відомості про доставлення листа. Надсилайте лише те, що необхідно для розв’язання питання. Ми використовуємо ці дані для розгляду та розв’язання звернень, відповіді вам, забезпечення безпеки та виконання застосовних вимог законодавства. Листи до служби підтримки не використовуються для реклами й не продаються.</p>"
+      },
+      {
+        "title": "Які дані не потрібно надсилати",
+        "body": "<p>Не надсилайте клієнтські справи, захищені медичні відомості, дані банківських карток, документи з державними ідентифікаторами, паролі, API-ключі, коди входу та інші чутливі відомості. Для обговорення рекламних матеріалів використовуйте вигадані або знеособлені приклади. Плагін не вимагає перелічених даних.</p>"
+      },
+      {
+        "title": "Хто обробляє звернення",
+        "body": "<p>Наразі підтримку вручну здійснює Viktoriia Kotova. Для пошти використовуються Cloudflare — пересилання вхідних листів, Google — приватна поштова скринька, Resend — надсилання відповідей. Ці постачальники обробляють відомості, необхідні для доставлення та зберігання листів, відповідно до власних умов. За законної потреби відомості можуть надаватися для виконання вимог законодавства, захисту прав і безпеки сервісу. Автоматичні відповіді служби підтримки за допомогою ШІ наразі не використовуються.</p>"
+      },
+      {
+        "title": "Строки зберігання",
+        "body": "<p>Листування зі службою підтримки зберігається протягом розв’язання питання та 12 місяців після його закриття, після чого видаляється або знеособлюється. Якщо законодавство вимагає окремого обліку запитів щодо персональних даних, мінімальні відомості про запит і відповідь зберігаються протягом установленого строку, зокрема 24 місяців для застосовних споживчих запитів у Каліфорнії. Для виконання юридичних обов’язків, розв’язання спорів або збереження доказів необхідні відомості можуть зберігатися довше. Ці строки стосуються даних під нашим контролем, а не вашого облікового запису ChatGPT чи самостійних юридичних записів постачальників.</p>"
+      },
+      {
+        "title": "Сайт і технічна обробка",
+        "body": "<p>На поточному сайті AIforPsy немає рекламних пікселів, аналітики аудиторії, форм підписки або системи облікових записів відвідувачів. Постачальники хостингу, мережевої безпеки та доставлення пошти можуть обробляти технічні відомості, наприклад IP-адреси та журнали запитів або доставлення, для роботи й захисту своїх сервісів. Це не означає відсутності технічних журналів у постачальників інфраструктури. Плагін не додає сервісу відстеження з боку видавця.</p>"
+      },
+      {
+        "title": "Ваші можливості та права",
+        "body": "<p>Плагіном можна користуватися без звернення до служби підтримки. Щоб подати запит на доступ, виправлення, видалення, обмеження обробки або отримання відомостей про звернення, які ми зберігаємо, напишіть на <a href=\"mailto:support@aiforpsy.net\">support@aiforpsy.net</a>. Права та винятки залежать від застосовного законодавства. Ми можемо обґрунтовано перевірити запит на основі наявного листування, не запитуючи документів, що посвідчують особу. Де це застосовно, ви можете заперечувати проти обробки та звернутися до місцевого органу захисту даних. Керування листуванням, завантаженими файлами та налаштуваннями даних OpenAI доступне через інструменти облікового запису й канали запитів OpenAI. Ми не можемо видалити вашу історію ChatGPT за вас.</p>"
+      },
+      {
+        "title": "Міжнародна обробка та правові підстави",
+        "body": "<p>Поштові постачальники та постачальники інфраструктури можуть обробляти відомості у США й інших країнах, де вони працюють. Якщо законодавство вимагає правової підстави, обробка для підтримки ґрунтується на відповіді на ваш запит, законному інтересі в наданні й захисті підтримки або юридичному обов’язку — залежно від ситуації. Необхідні заходи захисту під час міжнародної обробки регулюються застосовними угодами з постачальниками та законодавством.</p>"
+      },
+      {
+        "title": "Зміни",
+        "body": "<p>У разі зміни порядку обробки даних ми оновимо політику та її дату. Майбутні зовнішні інтеграції або автоматизована обробка звернень мають бути розкриті до їх підключення.</p>"
+      }
+    ],
+    "footer": "<a href=\"https://openai.com/policies/privacy-policy/\">Політика конфіденційності OpenAI</a> · <a href=\"https://privacy.openai.com/\">Портал конфіденційності OpenAI</a>"
+  },
+  "en": {
+    "title": "Privacy policy",
+    "byline": "Event Marketing Assistant · Viktoriia Kotova",
+    "sections": [
+      {
+        "title": "Scope and contact",
+        "body": "<p>This policy covers Event Marketing Assistant, published by Viktoriia Kotova, and support provided through AIforPsy. Privacy and support requests: <a href=\"mailto:support@aiforpsy.net\">support@aiforpsy.net</a>. Last updated: October 7, 2026.</p>"
+      },
+      {
+        "title": "Using the plugin in ChatGPT",
+        "body": "<p>The current plugin consists of instructions and local production helpers. It has no publisher-operated API, external MCP server, account system, chat telemetry, or automatic transmission of your conversations or uploads to the publisher. Event details and files you provide are processed within your ChatGPT environment according to OpenAI’s policies and your account settings. OpenAI controls its own processing, storage, and deletion; this policy does not replace OpenAI’s privacy policy.</p>"
+      },
+      {
+        "title": "Information we receive directly",
+        "body": "<p>If you email support, we receive your email address, any name included, message content, attachments you choose to send, and ordinary email delivery information. Provide only what is needed to describe your issue. We use this information to investigate and resolve requests, communicate with you, maintain service security, and meet applicable legal obligations. We do not use support messages for advertising or sell them.</p>"
+      },
+      {
+        "title": "Information to avoid",
+        "body": "<p>Do not send client case files, protected health information, payment card data, government identification documents, passwords, API keys, authentication codes, or other sensitive personal information. Use fictional or anonymized examples when discussing marketing material. The plugin does not require those categories of data.</p>"
+      },
+      {
+        "title": "Recipients and services",
+        "body": "<p>Support is currently handled manually by Viktoriia Kotova. Email services used for support include Cloudflare for incoming forwarding, Google for the private support mailbox, and Resend for outgoing delivery. These providers process information needed to deliver and store support email under their own service terms. We may disclose necessary information where legally required or to protect legal rights and service security. We do not operate automated AI support replies at present.</p>"
+      },
+      {
+        "title": "Retention",
+        "body": "<p>Support correspondence is kept while the issue is being handled and for 12 months after closure, then deleted or anonymized. Where applicable law requires a separate record of a privacy request, a minimal request-and-response record is retained for the required period, including 24 months for applicable California consumer requests. Information needed for a legal obligation, dispute, or legal hold may be retained longer; the exception is limited to the necessary information. These periods apply to records under our control, not to your ChatGPT account or providers’ independent legal records.</p>"
+      },
+      {
+        "title": "Website and technical processing",
+        "body": "<p>The current AIforPsy website does not include advertising pixels, audience analytics, subscription forms, or a visitor account system. Hosting, network security, and email delivery services may process technical information, such as IP addresses and request or delivery logs, to operate and secure their services. This does not mean that infrastructure providers keep no logs. This plugin does not add a publisher-side tracking service.</p>"
+      },
+      {
+        "title": "Your choices and rights",
+        "body": "<p>You can use the plugin without emailing us. To request access, correction, deletion, restriction, or information about support records we hold, contact <a href=\"mailto:support@aiforpsy.net\">support@aiforpsy.net</a>. Rights and exceptions depend on applicable law; we may reasonably verify a request using existing correspondence without asking for identity documents. Where applicable, you may also object to processing and complain to your local data protection authority. To manage conversations, uploads, or data settings held by OpenAI, use OpenAI’s account controls and privacy request channels. We cannot delete your ChatGPT history for you.</p>"
+      },
+      {
+        "title": "International processing and legal grounds",
+        "body": "<p>Email and infrastructure providers may process information in the United States and other countries where they operate. Where data protection law requires a legal basis, support processing is based on responding to your request, our legitimate interests in providing and securing support, or compliance with a legal obligation, as applicable. Any required safeguards for international processing are governed by the applicable provider agreements and law.</p>"
+      },
+      {
+        "title": "Changes",
+        "body": "<p>We will update the date and this policy if the plugin’s data practices change. Any future external integration or automated support processing must be disclosed before it is introduced.</p>"
+      }
+    ],
+    "footer": "<a href=\"https://openai.com/policies/privacy-policy/\">OpenAI privacy policy</a> · <a href=\"https://privacy.openai.com/\">OpenAI Privacy Portal</a>"
+  },
+  "ru": {
+    "title": "Политика конфиденциальности",
+    "byline": "Event Marketing Assistant · Viktoriia Kotova",
+    "sections": [
+      {
+        "title": "Область действия и контакты",
+        "body": "<p>Эта политика относится к Event Marketing Assistant, издатель — Viktoriia Kotova, и поддержке через AIforPsy. Вопросы о данных и поддержке: <a href=\"mailto:support@aiforpsy.net\">support@aiforpsy.net</a>. Обновлено: 7 октября 2026 года.</p>"
+      },
+      {
+        "title": "Использование плагина в ChatGPT",
+        "body": "<p>Текущая версия содержит инструкции и локальные вспомогательные скрипты. У неё нет API издателя, внешнего MCP-сервера, собственной системы аккаунтов, телеметрии чатов или автоматической передачи переписки и загрузок издателю. Сведения о мероприятии и файлы обрабатываются в вашей среде ChatGPT по правилам OpenAI и настройкам вашего аккаунта. OpenAI самостоятельно определяет обработку, хранение и удаление своих данных. Эта политика не заменяет политику конфиденциальности OpenAI.</p>"
+      },
+      {
+        "title": "Какие сведения получаем мы",
+        "body": "<p>Если вы пишете в поддержку, мы получаем ваш email, указанное имя, текст обращения, добровольно присланные вложения и обычные сведения о доставке письма. Присылайте только необходимое для решения вопроса. Мы используем эти данные для разбора и решения обращений, ответа вам, обеспечения безопасности и исполнения применимых требований закона. Письма поддержки не используются для рекламы и не продаются.</p>"
+      },
+      {
+        "title": "Какие данные не нужно присылать",
+        "body": "<p>Не присылайте клиентские дела, защищённые медицинские сведения, данные банковских карт, документы с государственными идентификаторами, пароли, API-ключи, коды входа и другие чувствительные сведения. Для обсуждения рекламных материалов используйте вымышленные или обезличенные примеры. Плагин не требует перечисленных данных.</p>"
+      },
+      {
+        "title": "Кто обрабатывает обращения",
+        "body": "<p>Сейчас поддержку вручную ведёт Viktoriia Kotova. Для почты используются Cloudflare — пересылка входящих писем, Google — приватный почтовый ящик, Resend — отправка ответов. Эти провайдеры обрабатывают необходимые для доставки и хранения писем сведения по своим условиям. При законной необходимости сведения могут быть предоставлены для исполнения требований закона, защиты прав и безопасности сервиса. Автоматические ответы поддержки с помощью ИИ пока не используются.</p>"
+      },
+      {
+        "title": "Сроки хранения",
+        "body": "<p>Переписка поддержки хранится во время решения вопроса и 12 месяцев после его закрытия, затем удаляется или обезличивается. Если закон требует отдельного учёта запросов о персональных данных, минимальные сведения о запросе и ответе хранятся установленный срок, в том числе 24 месяца для применимых потребительских запросов в Калифорнии. Для исполнения юридических обязанностей, разрешения споров или сохранения доказательств необходимые сведения могут храниться дольше. Эти сроки относятся к данным под нашим контролем, а не к вашему аккаунту ChatGPT или самостоятельным юридическим записям провайдеров.</p>"
+      },
+      {
+        "title": "Сайт и техническая обработка",
+        "body": "<p>На текущем сайте AIforPsy нет рекламных пикселей, аналитики аудитории, форм подписки или системы аккаунтов посетителей. Провайдеры хостинга, сетевой безопасности и доставки почты могут обрабатывать технические сведения, например IP-адреса и журналы запросов или доставки, для работы и защиты своих сервисов. Это не означает отсутствия технических журналов у инфраструктурных провайдеров. Плагин не добавляет сервис отслеживания со стороны издателя.</p>"
+      },
+      {
+        "title": "Ваши возможности и права",
+        "body": "<p>Плагином можно пользоваться без обращения в поддержку. Для запроса доступа, исправления, удаления, ограничения обработки или сведений о хранящихся у нас обращениях напишите на <a href=\"mailto:support@aiforpsy.net\">support@aiforpsy.net</a>. Права и исключения зависят от применимого законодательства. Мы можем разумно проверить запрос по имеющейся переписке, не запрашивая документы личности. Где применимо, вы можете возражать против обработки и обратиться в местный орган защиты данных. Управление перепиской, загрузками и настройками данных OpenAI доступно через инструменты аккаунта и каналы запросов OpenAI. Мы не можем удалить вашу историю ChatGPT за вас.</p>"
+      },
+      {
+        "title": "Международная обработка и основания",
+        "body": "<p>Почтовые и инфраструктурные провайдеры могут обрабатывать сведения в США и других странах своей работы. Если закон требует правового основания, обработка для поддержки опирается на ответ на ваш запрос, законный интерес в предоставлении и защите поддержки либо юридическую обязанность — в зависимости от ситуации. Требуемые меры защиты при международной обработке регулируются применимыми соглашениями с провайдерами и законом.</p>"
+      },
+      {
+        "title": "Изменения",
+        "body": "<p>При изменении обработки данных мы обновим политику и её дату. Будущие внешние интеграции или автоматизированная обработка поддержки должны быть раскрыты до их подключения.</p>"
+      }
+    ],
+    "footer": "<a href=\"https://openai.com/policies/privacy-policy/\">Политика конфиденциальности OpenAI</a> · <a href=\"https://privacy.openai.com/\">OpenAI Privacy Portal</a>"
+  }
+}
