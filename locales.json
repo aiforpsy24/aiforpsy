@@ -43,7 +43,8 @@
       "copySelection": "Скопіювати напрям",
       "copied": "Скопійовано",
       "introPrefix": "Ми ",
-      "doneForYou": "Ми можемо зробити все за вас і для вас — від ідеї до результату. Вам залишиться лише користуватися готовим рішенням."
+      "doneForYou": "Ми можемо зробити все за вас і для вас — від ідеї до результату. Вам залишиться лише користуватися готовим рішенням.",
+      "educationSupport": "Частина прибутку AIforPsy спрямовується на стипендії та освітню підтримку студентів в Україні."
     },
     "en": {
       "home": "Home",
@@ -70,7 +71,8 @@
       "copySelection": "Copy Selected Service",
       "copied": "Copied",
       "introPrefix": "We ",
-      "doneForYou": "We can do everything for you — from idea to finished result. All you have to do is use the solution we create for you."
+      "doneForYou": "We can do everything for you — from idea to finished result. All you have to do is use the solution we create for you.",
+      "educationSupport": "Part of AIforPsy’s profits supports scholarships and educational assistance for students in Ukraine."
     },
     "ru": {
       "home": "Главная",
@@ -97,7 +99,8 @@
       "copySelection": "Скопировать направление",
       "copied": "Скопировано",
       "introPrefix": "Мы ",
-      "doneForYou": "Мы можем сделать всё за вас и для вас — от идеи до результата. Вам останется только использовать готовое решение."
+      "doneForYou": "Мы можем сделать всё за вас и для вас — от идеи до результата. Вам останется только использовать готовое решение.",
+      "educationSupport": "Часть прибыли AIforPsy идёт на стипендии и образовательную поддержку студентов в Украине."
     }
   }
 }
