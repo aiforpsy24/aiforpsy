@@ -19,14 +19,11 @@ function alignCardIntroductions(){
  const container=document.querySelector('.cards');
  container.style.removeProperty('--card-title-height');
  container.style.removeProperty('--card-lead-height');
- container.style.removeProperty('--card-preview-height');
  if(!media.matches)return;
  const titleHeight=Math.max(...cards.map(card=>card.querySelector('.card-title').getBoundingClientRect().height));
  container.style.setProperty('--card-title-height',Math.ceil(titleHeight)+'px');
  const leadHeight=Math.max(...cards.map(card=>card.querySelector('.card-body .lead').getBoundingClientRect().height));
  container.style.setProperty('--card-lead-height',Math.ceil(leadHeight)+'px');
- const previewHeight=Math.max(...cards.map(card=>card.querySelector('.preview').getBoundingClientRect().height));
- container.style.setProperty('--card-preview-height',Math.ceil(previewHeight)+'px');
 }
 requestAnimationFrame(alignCardIntroductions);
 window.addEventListener('resize',alignCardIntroductions);
