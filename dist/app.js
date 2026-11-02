@@ -30,6 +30,9 @@ window.addEventListener('resize',alignCardIntroductions);
 if(document.fonts)document.fonts.ready.then(alignCardIntroductions);
 
 
-// This direction opens its catalog; other cards retain their existing interactions.
-const timeCard=cards[1];
-if(timeCard){timeCard.style.cursor="pointer";timeCard.addEventListener("click",event=>{if(media.matches&&!event.target.closest("a")){window.location.href="/"+document.documentElement.lang+"/save-time/"}})}
+// Catalog directions navigate directly. Mobile keeps the compact accordion;
+// its existing Read More link opens the same localized catalog.
+for(const [index,path] of [[1,'save-time'],[3,'services']]){
+ const card=cards[index];
+ if(card){card.style.cursor='pointer';card.addEventListener('click',event=>{if(media.matches&&!event.target.closest('a'))window.location.href='/'+document.documentElement.lang+'/'+path+'/'})}
+}

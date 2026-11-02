@@ -26,3 +26,9 @@ Styles and scripts in `dist/` are tracked source assets. `style.css` and `app.js
 Desktop shows four service cards; mobile uses four compact, initially collapsed accordions. Hero imagery, colors, and established layout are retained. Support contact: `support@aiforpsy.net`.
 
 See `PRODUCTS.md` for the external purchase architecture and retired-route handling. Never restore local course, checkout, or access logic to this storefront.
+
+## Services direction
+
+The fourth homepage direction opens `/{lang}/services/` directly. Mobile keeps its compact accordion and the Read More link opens the same catalog. It no longer opens the generic project/support dialog. `services.json` and `build_services.py` generate the shared catalog and localized service pages. The existing header/footer and other directions are unchanged.
+
+The photoshoot self-service link goes directly to MARKEVITA. Assisted checkout and booking are still disabled while their isolated TA-Next test workflow is prepared; no live payment is enabled by this storefront update.
