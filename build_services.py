@@ -1,10 +1,23 @@
 """Add localized service pages without changing approved direction cards or globals."""
 import json, re, html
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 from build_products import shell, write, video
 from localization import LANGUAGES, DEFAULT_LANGUAGE, UI, require_locales
 ROOT=Path(__file__).parent
 E=html.escape
+
+def booking_action(service,lang):
+ c=service['content'][lang]
+ target=service.get('bookingUrl')
+ if not target:
+  return '<button class="product-button" disabled>'+E(c['preparing'])+'</button>'
+ parsed=urlsplit(target)
+ if parsed.scheme!='https' or parsed.hostname!='ta-next.com' or parsed.username or parsed.password or parsed.port not in (None,443):
+  raise ValueError('Booking must use an approved TA-Next URL')
+ query=dict(parse_qsl(parsed.query));query['lang']=lang
+ target=urlunsplit(parsed._replace(query=urlencode(query)))
+ return '<a class="product-button" href="'+E(target,quote=True)+'" rel="external">'+E(c['bookingCta'])+' <span aria-hidden="true">→</span></a>'
 
 def card(service,lang):
  c=service['content'][lang]
@@ -26,7 +39,7 @@ def build():
    body+='<aside class="photo-note"><h2>'+E(c['variation'])+'</h2>'+paras(c['variationText'])+'</aside>'
    body+='<section id="ways" class="photo-section"><h2>'+E(c['choose'])+'</h2><div class="photo-ways">'
    body+='<article class="photo-way"><h3>'+E(c['self'])+'</h3>'+paras(c['selfText'])+'<div class="photo-prices"><p>'+E(c['five'])+' <strong>$5</strong></p><p>'+E(c['ten'])+' <strong>$7</strong></p></div><a class="product-button secondary" href="'+E(service['studioUrl'],quote=True)+'" rel="external">'+E(c['studio'])+' ↗</a><p class="quiet">'+E(c['studioNote'])+'</p></article>'
-   body+='<article class="photo-way"><h3>'+E(c['assisted'])+'</h3>'+paras(c['assistedText'])+'<div class="photo-package"><h4>'+E(c['standard'])+'</h4><strong class="photo-price">$49</strong>'+paras(c['standardDetails'])+'</div><div class="photo-package"><h4>'+E(c['object'])+'</h4><strong class="photo-price">$74</strong>'+paras(c['objectDetails'])+paras(c['objectText'])+'<p><strong>'+E(c['objectCount'])+'</strong></p>'+paras(c['objectRange'])+'</div><button class="product-button" disabled>'+E(c['preparing'])+'</button></article></div></section>'
+   body+='<article class="photo-way"><h3>'+E(c['assisted'])+'</h3>'+paras(c['assistedText'])+'<div class="photo-package"><h4>'+E(c['standard'])+'</h4><strong class="photo-price">$49</strong>'+paras(c['standardDetails'])+'</div><div class="photo-package"><h4>'+E(c['object'])+'</h4><strong class="photo-price">$74</strong>'+paras(c['objectDetails'])+paras(c['objectText'])+'<p><strong>'+E(c['objectCount'])+'</strong></p>'+paras(c['objectRange'])+'</div>'+booking_action(service,lang)+'</article></div></section>'
    body+=section(c['booking'],paras(c['bookingText']))
    body+=section(c['video'],'<div class="photo-video" role="img" aria-label="'+E(c['videoSoon'])+'"><span aria-hidden="true">▷</span>'+paras(c['videoSoon'])+'</div>')
    # Empty gallery stays hidden: never invent testimonials or client images.
