@@ -4,7 +4,7 @@
       "slug": "professional-ai-photoshoot",
       "section": 3,
       "studioUrl": "https://markevita.com/studio/photos",
-      "bookingUrl": null,
+      "bookingUrl": "https://ta-next.com/ai-for-psy/photoshoot/",
       "videoUrl": null,
       "gallery": [],
       "content": {
@@ -76,7 +76,8 @@
           "selection": "Файлів обрано",
           "sourceCount": "Оберіть щонайменше 6 справжніх фотографій.",
           "tooLarge": "Один із файлів перевищує 20 МБ.",
-          "fileType": "Оберіть фотографії у форматі JPG, PNG або WebP."
+          "fileType": "Оберіть фотографії у форматі JPG, PNG або WebP.",
+          "bookingCta": "Записатися на фотосесію"
         },
         "en": {
           "name": "Professional AI Photoshoot",
@@ -146,7 +147,8 @@
           "selection": "Files selected",
           "sourceCount": "Choose at least 6 real photographs.",
           "tooLarge": "One of the files exceeds 20 MB.",
-          "fileType": "Choose JPG, PNG, or WebP photographs."
+          "fileType": "Choose JPG, PNG, or WebP photographs.",
+          "bookingCta": "Book a Photoshoot"
         },
         "ru": {
           "name": "Профессиональная AI-фотосессия",
@@ -216,7 +218,8 @@
           "selection": "Файлов выбрано",
           "sourceCount": "Выберите не менее 6 настоящих фотографий.",
           "tooLarge": "Один из файлов превышает 20 МБ.",
-          "fileType": "Выберите фотографии в формате JPG, PNG или WebP."
+          "fileType": "Выберите фотографии в формате JPG, PNG или WebP.",
+          "bookingCta": "Записаться на фотосессию"
         }
       }
     }
