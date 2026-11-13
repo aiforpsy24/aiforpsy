@@ -62,7 +62,7 @@ def build():
   if not offers:raise ValueError('Published service catalog cannot be empty')
   title=offers[0]['content'][lang]['backLabel']
   body=f'<div class="wrap product-wrap"><a class="product-breadcrumb" href="/{lang}/">← {E(ui["home"])}</a><div class="catalog-heading"><p class="eyebrow">{E(ui["services"])}</p><h1>{E(title)}</h1><p class="product-intro">{E(ui["doneForYou"])}</p></div><div class="product-catalog service-catalog">'+''.join(card(s,lang) for s in offers)+'</div></div>'
-  write(out,f'{lang}/services/',shell(lang,title,body,'services/'))
+  write(out,f'{lang}/services/',shell(lang,title,body,'services/').replace('/products.css?v=4','/products.css?v=ananasik-1'))
   home=out/lang/'index.html';s=home.read_text()
   s,count=re.subn(r'<button class="read-more" data-service="3" aria-haspopup="dialog">(.*?)</button>',lambda m:f'<a class="read-more" href="/{lang}/services/">{m[1]}</a>',s)
   if count!=1:raise ValueError('Expected exactly one homepage service action')
