@@ -41,8 +41,7 @@ card copy and artwork. The build does not expire past events. Verify the destina
 published languages before updating `publishedLanguages` (currently EN/RU only).
 The UK homepage and root page remain unchanged; no UK event catalog is generated.
 
-`dist/assets/create-course.webp` is a language-neutral 16:9 derivative of the linked
-event's laptop artwork, made with the built-in image generator. Editing instruction:
-“Preserve the horizontal laptop and 3×3 course grid; remove all words, numbers,
-prices and badges, including book text; seamlessly extend the warm backgrounds.
-No text, logos or currency symbols.” This avoids embedded Russian copy on the EN card.
+`course-event.json` maps `images` to the owner's approved RU and EN PNG covers.
+The original uploaded images are copied without modification to
+`dist/assets/create-course-ru.png` and `dist/assets/create-course-en.png`.
+Both are displayed in full within the 16:9 frame (object-fit: contain).

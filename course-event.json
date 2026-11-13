@@ -1,7 +1,9 @@
 {
   "eventUrl": "https://ta-next.com/event/sozdayte-avtorskiy-kurs-pilot-2026?share_version=1794539862",
-  "publishedLanguages": ["en", "ru"],
-  "image": "/assets/create-course.webp",
+  "publishedLanguages": [
+    "en",
+    "ru"
+  ],
   "content": {
     "ru": {
       "home": "Главная",
@@ -19,5 +21,9 @@
       "more": "Learn More",
       "imageAlt": "Online courses on different topics displayed on a laptop"
     }
+  },
+  "images": {
+    "ru": "/assets/create-course-ru.png",
+    "en": "/assets/create-course-en.png"
   }
 }
