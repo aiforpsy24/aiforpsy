@@ -21,12 +21,20 @@ def booking_action(service,lang):
 
 def card(service,lang):
  c=service['content'][lang]
+ if service.get('externalUrl'):
+  parsed=urlsplit(service['externalUrl'])
+  if parsed.scheme!='https' or parsed.hostname!='ananasik.ai' or parsed.username or parsed.password or parsed.port not in (None,443):
+   raise ValueError('External service must use the approved Ananasik URL')
+  query=dict(parse_qsl(parsed.query));query['lang']=lang
+  target=E(urlunsplit(parsed._replace(query=urlencode(query))),quote=True)
+  return f'<a class="product-card external-service" href="{target}" rel="external"><div class="product-art"><img src="{E(service["image"],quote=True)}" alt="{E(c["imageAlt"],quote=True)}" width="480" height="360"></div><div class="product-card-copy"><h2>{E(c["name"])}</h2><p class="product-intro">{E(c["short"])}</p><span class="product-button">{E(c["more"])} <span aria-hidden="true">↗</span></span></div></a>'
  return f'<article class="product-card"><div class="product-art"><img src="/hero-workspace-v3.png" alt="{E(c["room"],quote=True)}" width="480" height="360"></div><div class="product-card-copy"><h2>{E(c["name"])}</h2><p class="product-intro">{E(c["short"])}</p><a class="product-button" href="/{lang}/services/{service["slug"]}/">{E(c["more"])} <span aria-hidden="true">→</span></a></div></article>'
 
 def build():
  config=json.loads((ROOT/'services.json').read_text());out=ROOT/'dist'
  for service in config['services']:
   require_locales(service['content'],'service content')
+  if service.get('externalUrl'):continue
   for lang in LANGUAGES:
    c=service['content'][lang];suffix=f'services/{service["slug"]}/'
    def section(title,body,cls=''):
@@ -53,7 +61,7 @@ def build():
   ui=UI[lang];offers=[s for s in config['services'] if s['section']==3]
   if not offers:raise ValueError('Published service catalog cannot be empty')
   title=offers[0]['content'][lang]['backLabel']
-  body=f'<div class="wrap product-wrap"><a class="product-breadcrumb" href="/{lang}/">← {E(ui["home"])}</a><div class="catalog-heading"><p class="eyebrow">{E(ui["services"])}</p><h1>{E(title)}</h1><p class="product-intro">{E(ui["doneForYou"])}</p></div><div class="product-catalog">'+''.join(card(s,lang) for s in offers)+'</div></div>'
+  body=f'<div class="wrap product-wrap"><a class="product-breadcrumb" href="/{lang}/">← {E(ui["home"])}</a><div class="catalog-heading"><p class="eyebrow">{E(ui["services"])}</p><h1>{E(title)}</h1><p class="product-intro">{E(ui["doneForYou"])}</p></div><div class="product-catalog service-catalog">'+''.join(card(s,lang) for s in offers)+'</div></div>'
   write(out,f'{lang}/services/',shell(lang,title,body,'services/'))
   home=out/lang/'index.html';s=home.read_text()
   s,count=re.subn(r'<button class="read-more" data-service="3" aria-haspopup="dialog">(.*?)</button>',lambda m:f'<a class="read-more" href="/{lang}/services/">{m[1]}</a>',s)
