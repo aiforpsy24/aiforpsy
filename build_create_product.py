@@ -28,7 +28,7 @@ def build():
         body = (f'<div class="wrap product-wrap"><a class="product-breadcrumb" href="/{lang}/">← {E(c["home"])}</a>'
                 f'<div class="catalog-heading"><p class="eyebrow">TA-Next Academy</p><h1>{E(c["direction"])}</h1></div>'
                 f'<article class="product-card course-event-card"><div class="course-event-art">'
-                f'<img src="{E(config["image"],quote=True)}" alt="{E(c["imageAlt"],quote=True)}" width="1600" height="900"></div>'
+                f'<img src="{E(config["images"][lang],quote=True)}" alt="{E(c["imageAlt"],quote=True)}" width="1600" height="900"></div>'
                 f'<div class="product-card-copy"><h2>{E(c["title"])}</h2><p class="product-intro">{E(c["intro"])}</p>'
                 f'<a class="product-button" href="{url}" rel="external">{E(c["more"])} <span aria-hidden="true">↗</span></a>'
                 '</div></article></div>')
