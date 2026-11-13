@@ -1,6 +1,35 @@
 {
   "services": [
     {
+      "slug": "ananasik",
+      "section": 3,
+      "externalUrl": "https://ananasik.ai/",
+      "image": "/assets/ananasik-logo.png",
+      "content": {
+        "uk": {
+          "name": "Ananasik — сайти та онлайн-курси",
+          "short": "Створимо односторінковий або багатосторінковий сайт, онлайн-курс і підключимо потрібний функціонал.",
+          "more": "Перейти до Ananasik",
+          "imageAlt": "Фірмовий ананас Ananasik з електронікою всередині",
+          "backLabel": "Зробіть це за мене"
+        },
+        "en": {
+          "name": "Ananasik — Websites and Online Courses",
+          "short": "We’ll build a one-page or multipage website, create an online course, and add the features you need.",
+          "more": "Explore Ananasik",
+          "imageAlt": "Ananasik’s signature pineapple with electronics inside",
+          "backLabel": "Do it for me"
+        },
+        "ru": {
+          "name": "Ananasik — сайты и онлайн-курсы",
+          "short": "Создадим одностраничный или многостраничный сайт, онлайн-курс и подключим нужный функционал.",
+          "more": "Перейти на Ananasik",
+          "imageAlt": "Фирменный ананас Ananasik с электроникой внутри",
+          "backLabel": "Сделайте это за меня"
+        }
+      }
+    },
+    {
       "slug": "professional-ai-photoshoot",
       "section": 3,
       "studioUrl": "https://markevita.com/studio/photos",
