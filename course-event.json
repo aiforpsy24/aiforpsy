@@ -1,0 +1,23 @@
+{
+  "eventUrl": "https://ta-next.com/event/sozdayte-avtorskiy-kurs-pilot-2026?share_version=1794539862",
+  "publishedLanguages": ["en", "ru"],
+  "image": "/assets/create-course.webp",
+  "content": {
+    "ru": {
+      "home": "Главная",
+      "direction": "Создать свой продукт",
+      "title": "Создайте свой авторский курс",
+      "intro": "Вы психолог, коуч, консультант, HR-специалист или бизнес-тренер? Ваши знания и профессиональный опыт могут стать основой собственного образовательного продукта — бесплатного курса для привлечения клиентов или платной программы, которая приносит дополнительный доход.",
+      "more": "Подробнее",
+      "imageAlt": "Онлайн-курсы разных направлений на экране ноутбука"
+    },
+    "en": {
+      "home": "Home",
+      "direction": "Create Your Own Product",
+      "title": "Create Your Own Signature Course",
+      "intro": "Are you a psychologist, coach, consultant, HR professional, or business trainer? Your knowledge and professional experience can become the foundation of your own educational product — a free course that attracts clients or a paid program that creates additional income.",
+      "more": "Learn More",
+      "imageAlt": "Online courses on different topics displayed on a laptop"
+    }
+  }
+}
