@@ -1,0 +1,11 @@
+/* Scoped to the course-creation catalog; preserve the full landscape artwork. */
+.course-event-card{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px;align-items:center}
+.course-event-art{aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#fff}
+.course-event-art img{display:block;width:100%;height:100%;object-fit:contain}
+.course-event-card .product-card-copy{min-width:0;padding:10px 12px 10px 0}
+.course-event-card .product-intro{max-width:none}
+@media(max-width:760px){
+.course-event-card{grid-template-columns:minmax(0,1fr);gap:18px}
+.course-event-card .product-card-copy{padding:0 1px 3px}
+.course-event-card .product-card-copy h2{overflow-wrap:normal}
+}

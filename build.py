@@ -40,3 +40,6 @@ build_privacy()
 
 from build_services import build as build_services
 build_services()
+
+from build_create_product import build as build_create_product
+build_create_product()

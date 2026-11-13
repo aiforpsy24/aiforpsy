@@ -32,3 +32,17 @@ See `PRODUCTS.md` for the external purchase architecture and retired-route handl
 The fourth homepage direction opens `/{lang}/services/` directly. Mobile keeps its compact accordion and the Read More link opens the same catalog. It no longer opens the generic project/support dialog. `services.json` and `build_services.py` generate the shared catalog and localized service pages. The existing header/footer and other directions are unchanged.
 
 The photoshoot self-service link goes directly to MARKEVITA. Assisted checkout and booking are still disabled while their isolated TA-Next test workflow is prepared; no live payment is enabled by this storefront update.
+
+### Course-creation event referral
+
+`course-event.json` keeps the permanent catalog card separate from its destination.
+Replace only `eventUrl` when the owner supplies a new TA-Next event URL; keep the
+card copy and artwork. The build does not expire past events. Verify the destination's
+published languages before updating `publishedLanguages` (currently EN/RU only).
+The UK homepage and root page remain unchanged; no UK event catalog is generated.
+
+`dist/assets/create-course.webp` is a language-neutral 16:9 derivative of the linked
+event's laptop artwork, made with the built-in image generator. Editing instruction:
+“Preserve the horizontal laptop and 3×3 course grid; remove all words, numbers,
+prices and badges, including book text; seamlessly extend the warm backgrounds.
+No text, logos or currency symbols.” This avoids embedded Russian copy on the EN card.
